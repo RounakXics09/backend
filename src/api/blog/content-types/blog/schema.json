@@ -11,9 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "blog_id": {
-      "type": "uid"
-    },
     "title": {
       "type": "string",
       "required": true
@@ -25,14 +22,21 @@
       "type": "datetime"
     },
     "blog_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "hh": {
+      "type": "richtext"
+    },
+    "blog_id": {
+      "type": "uid"
     }
   }
 }
